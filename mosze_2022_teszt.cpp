@@ -1,20 +1,26 @@
-// mosze_2022_teszt.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+
+constexpr int N_ELEMENTS = 100;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int* b = new int[NELEMENTS];
+    std::cout << '1-100 ertekek duplazasa' //Hiányzik pontos vesszõ
+        for (int i = 0;) //nincs befejezve a for ciklus
+        {
+            b[i] = i * 2;
+        }
+    for (int i = 0; i; i++) //nincs definiálva meddig fut a ciklus
+    {
+        std::cout << "Ertek:" //nincs megadva az érték váltózója
+    }
+    std::cout << "Atlag szamitasa: " << std::endl;
+    int atlag; // double legyen, értéke 0
+    for (int i = 0; i < N_ELEMENTS, i++) // meglehet csinálni egy for ciklusban is
+    {
+        atlag += b[i]
+    }
+    atlag /= N_ELEMENTS;
+    std::cout << "Atlag: " << atlag << std::endl;
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
