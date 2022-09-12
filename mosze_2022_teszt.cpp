@@ -1,26 +1,25 @@
 #include <iostream>
+using namespace std;
 
 constexpr int N_ELEMENTS = 100;
+constexpr int C_ELEMENTS = 100;
 
 int main()
 {
-    int* b = new int[NELEMENTS];
-    std::cout << '1-100 ertekek duplazasa' //Hiányzik pontos vesszõ
-        for (int i = 0;) //nincs befejezve a for ciklus
-        {
-            b[i] = i * 2;
-        }
-    for (int i = 0; i; i++) //nincs definiálva meddig fut a ciklus
+
+    int* b = new int[N_ELEMENTS];
+    std::cout << "1-100 ertekek duplazasa";
+    double atlag = 0;
+    for (int i = 0; i < 100; i++)
     {
-        std::cout << "Ertek:" //nincs megadva az érték váltózója
+        b[i] = i * 2;
+        atlag += b[i];
+        std::cout << i + 1 << ". darab: " << "Ertek: " << atlag << endl;
     }
-    std::cout << "Atlag szamitasa: " << std::endl;
-    int atlag; // double legyen, értéke 0
-    for (int i = 0; i < N_ELEMENTS, i++) // meglehet csinálni egy for ciklusban is
-    {
-        atlag += b[i]
-    }
+
+    std::cout << "Atlag szamitasa: " << endl;
     atlag /= N_ELEMENTS;
-    std::cout << "Atlag: " << atlag << std::endl;
+    std::cout << "Atlag: " << atlag << endl;
+
     return 0;
 }
