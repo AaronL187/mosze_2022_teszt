@@ -21,5 +21,6 @@ int main()
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << endl;
 
+    std::cout << "Kristof modositasa." << endl;
     return 0;
 }
